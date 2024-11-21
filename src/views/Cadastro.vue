@@ -44,5 +44,6 @@ function registrarFilme() {
     novoFilme.nome = "";
     novoFilme.diretor = "";
     novoFilme.genero = "";
+    id++;
 }
 </script>

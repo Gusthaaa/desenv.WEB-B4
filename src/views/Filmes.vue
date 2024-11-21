@@ -6,6 +6,7 @@
                 <p><strong>Nome:</strong> {{ filme.nome }}</p>
                 <p><strong>Diretor:</strong> {{ filme.diretor }}</p>
                 <p><strong>Gênero:</strong> {{ filme.genero }}</p>
+                <button class="ml-32" @click="excluirFilme(index)">Deletar Filme</button>
             </li>
         </ul>
     </div>
@@ -13,4 +14,9 @@
 
 <script setup>
 import { filmes } from '../js/movies.js';
+import { deletarFilme } from '../js/movies.js';
+
+function excluirFilme(index){
+    deletarFilme(index);
+}
 </script>
